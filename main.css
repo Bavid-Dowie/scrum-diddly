@@ -1,0 +1,82 @@
+/* .ph_fizz    {
+    color: grey;
+    background-color: purple;
+    
+} */
+header  {
+    color: #F26708;
+    background-color: #3D2D15;
+}
+
+body    {
+    border: 10px solid rgb(9, 3, 96);
+    background-color: rgb(9, 3, 96);
+}
+
+h3  {
+    color: white;
+}
+
+
+.container  {
+    border: 6px solid black;
+    display: grid;
+}
+
+.grid   {
+    height: 600px;
+    width: auto;
+    display: grid;
+    grid-template: repeat(5, 1fr) / 1fr 2fr 1fr;
+    outline: 5px solid  #883AC2;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.sidebarNextItem    {
+    background-color: #8ACC10;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.sidebarLowerLeft   {
+    background-color: #3D2D15;
+    grid-column: 1;
+    grid-row: 3 / span 3;
+}
+
+.centerGamePlay    {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 5;
+    background-color: #38A8CE;
+}
+
+#testGamePlayArea    {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 5;
+    background-color: #38A8CE;
+}
+
+.sidebarRightScore    {
+    background-color: #8ACC10;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.sidebarRightLives   {
+    background-color: #3D2D15;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.sidebarRightNotSure   {
+    background-color: #F26708;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.sidebarControls   {
+    background-color: rgb(9, 3, 96);
+    grid-column: 3;
+    grid-row: 4 / span 2;
+}

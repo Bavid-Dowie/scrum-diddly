@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>scrum Diddly: Yumption</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header id="fizzy_header" class="fizz">
+    <div class="container">
+            <h1 class="fizz">scrum Diddly: Fizzy Flyer</h2>
+                <div>
+                    <nav>
+                    <p class="ph_fizz">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <p class="ph_fizz">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <p class="ph_fizz">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </nav>
+                </div>
+            </header>
+            <h3>We are the musiic makers... we are the dreamers of dreams.</h1>
+            </div>
+
+            <button onclick="gameHeight()">Try it</button>
+            
+            </div>
+        <div class="grid">
+            <div class="sidebarNextItem"></div>
+            <div class="sidebarLowerLeft"></div>
+            <div class="centerGamePlay" id="grid"></div>
+            <div class="sidebarRightScore"></div>
+            <div class="sidebarRightLives"></div>
+            <div class="sidebarRightNotSure"></div>
+            <div class="sidebarControls"></div>
+    </div>
+    <script>
+        function gameHeight() {
+            var gameSpace = document.getElementById("grid");
+            var txt = "Height including padding: " + gameSpace.clientHeight + "px<br>";
+            txt += "Width including padding: " + gameSpace.clientWidth + "px";
+            document.getElementById("grid").innerHTML = txt;
+            console.log(txt)
+            }
+    </script>
+</body>
+</html>
