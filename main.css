@@ -26,9 +26,6 @@ div {
     display: grid;
 }
 
-#charlieBucket {
-    position: relative;
-}
 
 .grid   {
     height: 600px;
@@ -53,15 +50,28 @@ div {
     grid-row: 3 / span 3;
 }
 
-.centerGamePlay    {
+#gameContainer    {
+    position: relative;
     display: grid;
     grid-column: 2 / span 1;
     grid-row: 1 / span 5;
     background: #38A8CE;
-    grid-template-rows: repeat(5, 1fr);
+    /* grid-template-rows: repeat(5, 1fr); */
 }
 
-.goldenTicket  {
+#charlieBucket {
+    position: absolute;
+    background-color: #F26708; 
+    /* grid-row: 5; */
+    display: block;
+    bottom: 5%;
+    height: 75px; 
+    width: 75px;
+    border-radius: 50%;
+    justify-self: center;
+}
+
+/* .goldenTicket  {
     background-color: #F26708; 
     grid-row: 5;
     display: block;
@@ -69,7 +79,7 @@ div {
     width: 75px;
     border-radius: 50%;
     justify-self: center;
-}
+} */
 
 #testGamePlayArea    {
     grid-column: 2 / span 1;

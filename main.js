@@ -1,4 +1,4 @@
-playerChar = document.getElementsByClassName('goldenTicket');
+let playerDiv = document.getElementsByClassName('goldenTicket');
 
     function moveLeftRight(e) {
         let key_code = e.which || e.keyCode;
@@ -12,10 +12,10 @@ playerChar = document.getElementsByClassName('goldenTicket');
         }
     }
     function charLeft() {
-        playerChar.style.left = parseInt(playerChar.style.left) - 5 + 'px';
+        playerDiv.style.left = parseInt(playerDiv.style.left) - 5 + 'px';
     }
     function charRight() {
-        playerChar.style.left = parseInt(playerChar.style.left) + 5 + 'px';
+        playerDiv.style.left = parseInt(playerDiv.style.left) + 5 + 'px';
     }
     
-    playerChar.addEventListener("keydown", moveLeftRight);
+    playerDiv.addEventListener('onkeydown', moveLeftRight);
