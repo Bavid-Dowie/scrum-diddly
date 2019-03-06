@@ -65,9 +65,9 @@ div {
     background-color: #F26708; 
     grid-row: 5;
     display: block;
-    height: 100px; 
-    width: 50px;
-    border-radius: 35%;
+    height: 75px; 
+    width: 75px;
+    border-radius: 50%;
     justify-self: center;
 }
 
