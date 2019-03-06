@@ -10,18 +10,22 @@ header  {
 
 body    {
     border: 10px solid rgb(9, 3, 96);
-    background-color: rgb(9, 3, 96);
+    background: rgb(9, 3, 96);
 }
 
 h3  {
     color: white;
 }
 
+div {
+    border: 6px solid black;
+}
 
 .container  {
     border: 6px solid black;
     display: grid;
 }
+
 
 .grid   {
     height: 600px;
@@ -37,6 +41,7 @@ h3  {
     background-color: #8ACC10;
     grid-column: 1;
     grid-row: 1 / span 2;
+    
 }
 
 .sidebarLowerLeft   {
@@ -46,9 +51,21 @@ h3  {
 }
 
 .centerGamePlay    {
+    display: grid;
     grid-column: 2 / span 1;
     grid-row: 1 / span 5;
-    background-color: #38A8CE;
+    background: #38A8CE;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.goldenTicket  {
+    background-color: #F26708; 
+    grid-row: 5;
+    display: block;
+    height: 100px; 
+    width: 50px;
+    border-radius: 35%;
+    justify-self: center;
 }
 
 #testGamePlayArea    {

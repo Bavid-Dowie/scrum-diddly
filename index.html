@@ -29,20 +29,13 @@
         <div class="grid">
             <div class="sidebarNextItem"></div>
             <div class="sidebarLowerLeft"></div>
-            <div class="centerGamePlay" id="grid"></div>
+            <div class="centerGamePlay" id="gameContainer">
+                <div id="charlieBucket" class="goldenTicket"></div>  
+            </div>
             <div class="sidebarRightScore"></div>
             <div class="sidebarRightLives"></div>
             <div class="sidebarRightNotSure"></div>
             <div class="sidebarControls"></div>
     </div>
-    <script>
-        function gameHeight() {
-            var gameSpace = document.getElementById("grid");
-            var txt = "Height including padding: " + gameSpace.clientHeight + "px<br>";
-            txt += "Width including padding: " + gameSpace.clientWidth + "px";
-            document.getElementById("grid").innerHTML = txt;
-            console.log(txt)
-            }
-    </script>
 </body>
 </html>
