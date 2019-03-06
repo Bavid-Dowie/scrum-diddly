@@ -14,25 +14,28 @@ body    {
 }
 
 h3  {
-    color: white;
+    color: #F26708;
 }
 
 div {
-    border: 6px solid black;
+    border: 2px solid rgb(9, 3, 96);
 }
 
 .container  {
-    border: 6px solid black;
+    border: 6px solid rgb(9, 3, 96);
     display: grid;
 }
 
+#charlieBucket {
+    position: relative;
+}
 
 .grid   {
     height: 600px;
     width: auto;
     display: grid;
     grid-template: repeat(5, 1fr) / 1fr 2fr 1fr;
-    outline: 5px solid  #883AC2;
+    outline: 5px solid  rgb(9, 3, 96);
     margin: 5px auto;
     text-align: center;
 }
