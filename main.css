@@ -65,7 +65,7 @@ div {
     background: #38A8CE;
 }
 
-/*  To be used when creating multiple characters 
+/*  For use when creating multiple characters 
     #charlieBucket {
         position: absolute; bottom:5%;
         background-color: #F26708; 
@@ -79,10 +79,9 @@ div {
 .goldenTicket  {
     background-color: #F26708; 
     grid-row: 5;
-    /* display: block; */
     position:absolute;
     left: 0;
-    right: 0;
+    top: 0;
     height: 75px;
     width: 75px;
     border-radius: 50%;
