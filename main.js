@@ -16,10 +16,6 @@ function moveLeftUpRight(evt) {
         console.log(key_code)
             charRight();
             break;
-        case 40: //down arrow
-        console.log(key_code)
-            charDown();
-            break;
     }
 }
 function charLeft() {
@@ -34,8 +30,18 @@ function charRight() {
     playerDiv.style.left = parseInt(playerDiv.style.left) + 25 + 'px';
     console.log("This variable is this:", playerDiv.style.left)
 }
-// Optional move down:
-// function charDown() {
-//     playerDiv.style.top = parseInt(playerDiv.style.top) + 25 + 'px';
-//     console.log("This variable is this:", playerDiv.style.top)
-// }
+
+function fallingObject() {
+    let fall = document.getElementById('fallingObj');
+    let posit = 0;
+    const id = setInterval(frame,10);
+    function frame() {
+        if (posit == 300) {
+            clearInterval(id);
+        } else {
+            posit++;
+            fall.style.top = posit + 'px';
+            fall.style.left = posit + 'px';
+        }
+    }
+}
