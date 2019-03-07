@@ -1,0 +1,129 @@
+header  {
+    color: #F26708;
+    background-color: #3D2D15;
+    text-align: center;
+}
+
+body {
+    border: 10px solid #090360;
+    background: #090360;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+/* body {
+    border: 10px solid rgb(9, 3, 96);
+    background: rgb(9, 3, 96);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h3  {
+    color: #F26708;
+    text-align: center;
+    font-style: italic;
+}
+
+div {
+    border: 2px solid #090360;
+}
+
+.container  {
+    border: 6px solid #090360;
+    display: grid;
+}
+
+.grid   {
+    height: 750px;
+    width: auto;
+    display: grid;
+    grid-template: repeat(5, 1fr) / 1fr 2fr 1fr;
+    outline: 5px solid  #090360;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.sidebarNextItem    {
+    background-color: #8ACC10;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    
+}
+
+.sidebarLowerLeft   {
+    background-color: #3D2D15;
+    grid-column: 1;
+    grid-row: 3 / span 3;
+}
+
+#gameContainer    {
+    position: relative;
+    display: grid;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 5;
+    background: #38A8CE;
+}
+
+/*  To be used when creating multiple characters 
+    #charlieBucket {
+        position: absolute; bottom:5%;
+        background-color: #F26708; 
+        display: block;
+        height: 75px; 
+        width: 75px;
+        border-radius: 50%;
+        justify-self: center;
+} */
+
+.goldenTicket  {
+    background-color: #F26708; 
+    grid-row: 5;
+    /* display: block; */
+    position:absolute;
+    left: 0;
+    right: 0;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    justify-self: center;
+}
+
+#testGamePlayArea    {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 5;
+    background-color: #38A8CE;
+}
+
+.sidebarRightScore    {
+    background-color: #8ACC10;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.sidebarRightLives   {
+    background-color: #3D2D15;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.sidebarRightNotSure   {
+    background-color: #F26708;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.sidebarControls   {
+    background-color: rgb(9, 3, 96);
+    grid-column: 3;
+    grid-row: 4 / span 2;
+}
