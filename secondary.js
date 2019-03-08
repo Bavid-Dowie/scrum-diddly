@@ -1,3 +1,19 @@
+function Shape(x, y) {
+    this.x=x;
+    this.y=y;
+}
+Shape.toString = function() {
+    return 'Shape at '+this.x+', '+this.y;
+}
+function Circle(x, y, r) {
+    Shape.call(this, x, y);
+    this.r = r;
+}
+Circle = new Shape();
+Circl.toString = function() {
+    
+}
+
 let playerDiv = document.querySelector('.goldenTicket');
 
 window.addEventListener('keydown', moveLeftUpRight);
