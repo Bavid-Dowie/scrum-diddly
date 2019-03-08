@@ -33,15 +33,58 @@ function charRight() {
 
 function fallingObject() {
     let fall = document.getElementById('fallingObj');
-    let posit = 0;
-    const id = setInterval(frame,10);
+    let posit = 0; // Starts at top of screen
+    const id = setInterval(frame,0); // Rate of falling object
     function frame() {
-        if (posit == 300) {
+        if (posit >= 750) {
             clearInterval(id);
         } else {
             posit++;
             fall.style.top = posit + 'px';
-            fall.style.left = posit + 'px';
+            // console.log(parseInt(fall.style.left), parseInt(playerDiv.style.left) - 75) 
+            // console.log(parseInt(playerDiv.width))
+
+
+
+
+            console.log(parseInt(fall.style.left) > parseInt(playerDiv.style.left) - 75)
+            if (parseInt(playerDiv.style.top) < parseInt(fall.style.top) 
+            && parseInt(fall.style.left) > parseInt(playerDiv.style.left) 
+                    && parseInt(fall.style.left) < parseInt(playerDiv.style.left) + 75) {
+                console.log('boom', playerDiv.style.top, fall.style.top)
+
+            }
+
+            // console.log(playerDiv.style.top)
         }
     }
 }
+fallingObject()
+// setInterval(fallingObject(), 3000)
+
+
+// Attempts at collision detection - all failed
+
+let playerPosition = document.querySelector('#charlieBucket').getBoundingClientRect()
+console.log(playerPosition)
+// let playerTop = playerPosition.top;
+// let playerHeight = playerPosition.height;
+// let playerLeft = playerPosition.left;
+// let playerWidth = playerPosition.width;
+let objectOne = document.querySelector('#fallingObj').getBoundingClientRect()
+console.log(objectOne)
+// let objectOneTop = objectOne.top;
+// let objectOneHeight = objectOne.height;
+// let objectOneLeft = objectOne.left;
+// let objectOneWidth = objectOne.width;
+// function isCollide(playerPosition, objectOne) {
+//     let player = playerPosition;
+//     let objec1 = objectOne;
+// if ()
+//     return !(
+//         ((player.top + player.height) < (objec1.top)) ||
+//         (player.top > (objec1.top + objec1.height))   ||
+//         ((player.left + player.width) < objec1.left)  ||
+//         (player.left > (objec1.left + objec1.width))
+//     );
+// }

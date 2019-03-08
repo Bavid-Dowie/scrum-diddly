@@ -82,6 +82,8 @@ div {
     position: absolute;
     width: 25px;
     height: 25px;
+    left:0;
+    top:0;
     border-radius: 50%;
 }
 
@@ -108,3 +110,4 @@ div {
     grid-column: 3;
     grid-row: 4 / span 2;
 }
+
