@@ -6,7 +6,7 @@ let score = function () {
     if (total < 50) {
         total += 10
         scoreDiv.textContent = total
-        console.log(total)
+        // console.log(total)
     } else {
         scoreDiv.textContent = total
         return total
@@ -16,14 +16,17 @@ window.addEventListener('keydown', moveLeftUpRight);
 function moveLeftUpRight(evt) {
     let key_code = evt.which || evt.keyCode;
     switch (key_code) {
-        case 37: //left arrow
+        case 37:
             charLeft();
             break;
-        case 38: //up arrow
+        case 38:
             charUp();
             break;
-        case 39: //right arrow
+        case 39:
             charRight();
+            break;
+        case 40:
+            charDown();
             break;
     }
 }
@@ -36,6 +39,9 @@ function charUp() {
 function charRight() {
     playerDiv.style.left = parseInt(playerDiv.style.left) + 15 + 'px';
 }
+function charDown() {
+    playerDiv.style.top = parseInt(playerDiv.style.top) + 15 + 'px';
+}
 
 function collisionHit() {
     let fall = document.getElementById('fallingObj');
@@ -43,17 +49,16 @@ function collisionHit() {
     const id = setInterval(frame, 0); // Rate of falling object
     function frame() {
         if (posit >= 750) {
+            fall.style.top = 0;
+            posit = 0;
         } else {
             posit++;
             fall.style.top = posit + 'px';
             if (parseInt(playerDiv.style.top) < parseInt(fall.style.top)
                 && parseInt(fall.style.left) > parseInt(playerDiv.style.left)
-                && parseInt(fall.style.left) < parseInt(playerDiv.style.left) + 75) {
-                // console.log('Yum!')
+                && parseInt(fall.style.left) < parseInt(playerDiv.style.left) + parseInt(playerDiv.style.left)) {
                     fall.style.top = 0;
                     posit = 0;
-                // clearInterval(id);
-                console.log('test')
                 score()
             }
         }
